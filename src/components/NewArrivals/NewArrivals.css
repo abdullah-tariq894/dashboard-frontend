@@ -1,0 +1,261 @@
+.new-arrivals {
+  width: 100%;
+  padding: 60px 55px 25px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Heading */
+.section-title {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #000000;
+}
+
+/* Products */
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+}
+
+/* Product Card - Added Hover Transitions */
+.product-card {
+  min-width: 0;
+  border-radius: 16px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); 
+}
+
+/* Product Image - Added Zoom Effect */
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f0f1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease; 
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.08); 
+}
+
+/* Product Name */
+.product-card h3 {
+  margin: 12px 0 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.product-card:hover h3 {
+  color: #ff5a36; 
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating span {
+  color: #ffc107;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.rating small {
+  color: #555;
+  font-size: 13px;
+}
+
+/* Price */
+.price {
+  margin: 5px 0 0;
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Price with discount */
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.price-row .price {
+  margin: 0;
+}
+
+.old-price {
+  margin: 0;
+  color: #999;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.discount {
+  padding: 4px 8px;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #ff3333;
+  font-size: 12px;
+}
+
+/* View All */
+/* View All Button Base Style */
+.view-all {
+  display: block;
+  min-width: 160px;
+  width: fit-content;
+  padding: 12px 32px;
+  margin: 50px auto 0;
+  
+  background-color: transparent !important;
+  border: 1.5px solid #000000 !important;
+  color: #000000 !important;
+  
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Hover State Fix: Black Background + White Text */
+
+.view-all:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .new-arrivals {
+    padding: 45px 25px 25px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .product-image {
+    height: 170px;
+  }
+
+  .product-card h3 {
+    font-size: 11px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .new-arrivals {
+    padding: 35px 15px 20px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 10px;
+  }
+
+  .product-image {
+    height: 170px;
+  }
+
+  .product-card h3 {
+    font-size: 11px;
+  }
+
+  .rating span {
+    font-size: 11px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+  .new-arrivals {
+    padding: 30px 10px 20px;
+  }
+
+  .section-title {
+    font-size: 21px;
+  }
+
+  .product-image {
+    height: 140px;
+  }
+
+  .product-card h3 {
+    font-size: 10px;
+  }
+
+  .rating span {
+    font-size: 9px;
+  }
+
+  .rating small {
+    font-size: 8px;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+}
+/* Quick add to cart button on product card */
+.quick-add-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 62px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.quick-add-btn:hover {
+  background-color: #333333;
+}

@@ -1,0 +1,83 @@
+.top-bar {
+  width: 100%;
+  min-height: 38px;
+  margin: 0;
+  padding: 9px 20px; 
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.top-bar-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.top-bar-text a {
+  color: #ffffff;
+  margin-left: 6px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.top-bar-text a:hover {
+  opacity: 0.7;
+}
+
+.top-bar-close {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.top-bar-close:hover {
+  opacity: 0.7;
+}
+
+/* Tablet & Mobile Screens */
+@media (max-width: 768px) {
+  .top-bar {
+    min-height: 34px;
+    padding: 8px 16px;
+  }
+
+  .top-bar-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar-text {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .top-bar-text a {
+    margin-left: 4px;
+  }
+
+  /* Close button mobile par image ke mutabiq hide hoga */
+  .top-bar-close {
+    display: none;
+  }
+}

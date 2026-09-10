@@ -1,0 +1,228 @@
+.style-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 55px auto;
+  padding: 60px 25px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.style-section h2 {
+  margin: 0 0 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #000;
+}
+
+
+/* Grid */
+
+.style-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+
+/* Cards */
+
+.style-card {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+/* Card Text */
+
+.style-card span {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+
+/* Card Image */
+
+.style-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .style-section {
+    width: 92%;
+    padding: 45px 20px;
+  }
+
+  .style-section h2 {
+    margin-bottom: 35px;
+    font-size: 27px;
+  }
+
+  .style-card {
+    height: 200px;
+  }
+
+  .style-card span {
+    font-size: 15px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .style-section {
+    width: 94%;
+    margin: 30px auto;
+    padding: 30px 12px;
+    border-radius: 15px;
+  }
+
+  .style-section h2 {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+
+
+  /* One card per row */
+
+  .style-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+
+  /* Cards */
+
+  .style-card {
+    grid-column: 1 !important;
+    width: 100%;
+    height: 150px;
+  }
+
+
+  .style-card span {
+    top: 10px;
+    left: 12px;
+    font-size: 14px;
+  }
+}
+
+
+/* Very Small Mobile */
+
+@media (max-width: 380px) {
+
+  .style-section {
+    width: 94%;
+    margin: 25px auto;
+    padding: 25px 10px;
+  }
+
+  .style-section h2 {
+    margin-bottom: 18px;
+    font-size: 19px;
+  }
+
+  .style-grid {
+    gap: 12px;
+  }
+
+  .style-card {
+    width: 100%;
+
+    height: 140px;
+  }
+
+  .style-card span {
+    top: 9px;
+    left: 10px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* Card Hover Base Setup */
+.style-card {
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.3s ease;
+}
+
+/* Image Zoom Effect */
+.style-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+
+.style-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Text Pop Animation */
+.style-card span {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* --- HOVER STATES --- */
+
+/* Card Slight Lift */
+.style-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Zoom-In */
+.style-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Dark Overlay Show */
+.style-card:hover::after {
+  opacity: 1;
+}
+
+/* Text Slight Move */
+.style-card:hover span {
+  transform: translateX(4px);
+}

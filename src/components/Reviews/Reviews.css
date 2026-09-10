@@ -1,0 +1,319 @@
+.reviews {
+  width: 100%;
+  padding: 55px 70px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+/* Header */
+
+.reviews-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.reviews-header h2 {
+  margin: 0 0 0 10px;
+   font-size: 30px;
+  font-weight: 900;
+  color: #000;
+}
+
+
+/* Arrows */
+
+.review-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-buttons button {
+  border: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+/* Slider */
+
+.reviews-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.reviews-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Card */
+
+.review-card {
+  flex: 0 0 calc((100% - 20px) / 3);
+  min-height: 230px;
+  padding: 22px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+
+/* Stars */
+
+.review-rating {
+  margin-bottom: 20px;
+  color: #ffc107;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+
+/* Name */
+
+.review-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.review-name span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #00a651;
+  color: #fff;
+  font-size: 8px;
+}
+
+
+/* Review text */
+
+.review-card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.reviews {
+  width: 100%;
+  padding: 55px 70px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+/* Header */
+
+.reviews-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.reviews-header h2 {
+  margin: 0 0 0 10px;
+   font-size: 30px;
+  font-weight: 900;
+  color: #000;
+}
+
+
+/* Arrows */
+
+.review-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-buttons button {
+  border: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+/* Slider */
+
+.reviews-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.reviews-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Card */
+
+.review-card {
+  flex: 0 0 calc((100% - 20px) / 3);
+  min-height: 230px;
+  padding: 22px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+
+/* Stars */
+
+.review-rating {
+  margin-bottom: 20px;
+  color: #ffc107;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+
+/* Name */
+
+.review-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.review-name span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #00a651;
+  color: #fff;
+  font-size: 8px;
+}
+
+
+/* Review text */
+
+.review-card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .reviews {
+    padding: 40px 25px;
+  }
+
+  .reviews-header h2 {
+    font-size: 27px;
+  }
+
+  .review-card {
+    flex: 0 0 calc((100% - 10px) / 2);
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .reviews {
+    padding: 38px 15px;
+  }
+
+  .reviews-header h2 {
+    font-size: 21px;
+  }
+
+  .review-buttons button {
+    font-size: 18px;
+  }
+
+  .review-card {
+    flex: 0 0 100%;
+
+    min-height: 150px;
+
+    padding: 15px;
+  }
+   .review-rating {
+    font-size: 17px;
+  }
+
+  .review-name {
+    font-size: 17px;
+  }
+
+  .review-card p {
+    font-size: 14px;
+  }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 380px) {
+
+  .reviews {
+    padding: 38px 10px;
+  }
+
+  .reviews-header h2 {
+    font-size: 15px;
+  }
+
+  .review-card {
+    min-height: 190px;
+  }
+
+   .review-rating {
+    font-size: 17px;
+  }
+
+  .review-name {
+    font-size: 17px;
+  }
+
+  .review-card p {
+    font-size: 14px;
+  }
+}
