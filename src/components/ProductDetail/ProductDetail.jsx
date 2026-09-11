@@ -39,7 +39,7 @@ function ProductDetail() {
 
       try {
         const res = await fetch(
-          `https://shop-co-backend-sigma.vercel.app/api/products/${id}`
+          `https://dashboard-backend-beta-orpin.vercel.app/api/products/${id}`
         );
         if (res.ok) return await res.json();
       } catch (err) {
