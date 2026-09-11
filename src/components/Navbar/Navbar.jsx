@@ -82,7 +82,7 @@ function Navbar() {
       let cancelled = false;
 
       const mainFetch = fetch(
-        `https://shop-co-backend-sigma.vercel.app/api/products?search=${encodeURIComponent(query)}`
+        `https://dashboard-backend-beta-orpin.vercel.app/api/products?search=${encodeURIComponent(query)}`
       )
         .then((res) => res.json())
         .catch((err) => {

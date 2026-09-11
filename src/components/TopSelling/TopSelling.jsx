@@ -16,7 +16,7 @@ function TopSelling() {
     let cancelled = false;
 
     const mainFetch = fetch(
-      "https://shop-co-backend-sigma.vercel.app/api/products/top-selling"
+      "https://dashboard-backend-beta-orpin.vercel.app/api/products/top-selling"
     )
       .then((res) => res.json())
       .catch((err) => {

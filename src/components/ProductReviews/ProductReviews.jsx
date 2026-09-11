@@ -14,7 +14,7 @@ function ProductReviews() {
     if (!id) return;
 
     setLoading(true);
-    fetch(`https://shop-co-backend-sigma.vercel.app/api/products/${id}/reviews`)
+    fetch(`https://dashboard-backend-beta-orpin.vercel.app/api/products/${id}/reviews`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {

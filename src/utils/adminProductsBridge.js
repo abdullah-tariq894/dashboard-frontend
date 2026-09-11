@@ -1,6 +1,6 @@
 // Bridges the Admin dashboard's product backend into the public storefront
 // (New Arrivals, Shop, Product Detail) WITHOUT touching the existing
-// storefront backend (shop-co-backend-sigma) or how AdminProducts.jsx works.
+// storefront backend (dashboard-backend-beta-orpin) or how AdminProducts.jsx works.
 // Admin products are fetched from their own API and merged in, tagged with
 // an "admin-" id prefix so Product Detail knows which backend to ask when
 // someone opens one.
