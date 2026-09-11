@@ -17,7 +17,7 @@ function NewArrivals() {
     let cancelled = false;
 
     const mainFetch = fetch(
-      "https://shop-co-backend-sigma.vercel.app/api/products/new-arrivals"
+      "https://dashboard-backend-beta-orpin.vercel.app/api/products/new-arrivals"
     )
       .then((res) => res.json())
       .catch((err) => {

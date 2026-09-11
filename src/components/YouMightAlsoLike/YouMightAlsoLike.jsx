@@ -11,7 +11,7 @@ function YouMightAlsoLike() {
   useEffect(() => {
     let cancelled = false;
 
-    const mainFetch = fetch("https://shop-co-backend-sigma.vercel.app/api/products")
+    const mainFetch = fetch("https://dashboard-backend-beta-orpin.vercel.app/api/products")
       .then((res) => res.json())
       .catch((err) => {
         console.error("You Might Also Like Fetch Error:", err);
